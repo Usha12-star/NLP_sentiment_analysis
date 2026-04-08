@@ -60,10 +60,6 @@ pip install imbalanced-learn
 pip install nltk
 pip install pandas numpy matplotlib seaborn
 ```
-
-Or install all at once:
-```bash : pip install torch transformers scikit-learn imbalanced-learn nltk pandas numpy matplotlib seaborn ```
-
 ---
 
 ##  How to Run
@@ -77,22 +73,22 @@ Or install all at once:
 ### Option 2: Run Locally
 1. Clone this repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-   cd YOUR_REPO_NAME
+   git clone https://github.com/Usha12-star/NLP_sentiment_analysis.git
+   cd NLP_sentiment_analysis 
    ```
 2. Install dependencies.
-3. Download the dataset from Kaggle and place it at:
+3. Download the dataset from Kaggle or download from github itself and place it at:
    ```
-   data/data.csv
+   data/mental-health-data.csv
    ```
 4. Update `DATA_PATH` in the config cell:
    ```python
-   DATA_PATH = "data/data.csv"
+   DATA_PATH = "data/mental-health-data.csv"
    OUTPUT_DIR = "outputs"
    ```
 5. Launch python code editor and run:
    ```bash
- nlp-sentimental-analysis.py
+ nlp_sentimental_analysis.py
    ```
 ---
 
