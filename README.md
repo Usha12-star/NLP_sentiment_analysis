@@ -1,7 +1,5 @@
 ### A Comparative Study of BERT, RoBERTa, and DistilBERT against Classical Machine Learning Models
 
----
-
 ## Project Overview
 
 This project addresses the challenge of automatically classifying mental health-related text into 7 categories using both classical machine learning baselines and outperforming transformer models. It is designed as a comparative study to evaluate model performance, computational efficiency and generalization on real-world noisy data.
@@ -9,7 +7,6 @@ This project addresses the challenge of automatically classifying mental health-
 **Dataset:** [Mental Health Data — Hugging Face, Kaggle](https://huggingface.co/datasets/btwitssayan/sentiment-analysis-for-mental-health)(https://www.kaggle.com/datasets/ushapoudellamgade/mental-health-data)  
 **Total Samples:** 52,680 | **Classes:** 7 | **Platform:** Kaggle (GPU: NVIDIA Tesla T4)
 
----
 
 ## Repository Structure
 
@@ -28,8 +25,6 @@ This project addresses the challenge of automatically classifying mental health-
     └── DistilBERT_training_history.png
 ```
 
----
-
 ## Class Labels
 
 | Category             | Samples | %     |
@@ -42,7 +37,6 @@ This project addresses the challenge of automatically classifying mental health-
 | Stress               | 2,587   | 4.9%  |
 | Personality Disorder | 1,077   | 2.0%  |
 
----
 
 ## Requirements
 
@@ -60,7 +54,6 @@ pip install imbalanced-learn
 pip install nltk
 pip install pandas numpy matplotlib seaborn
 ```
----
 
 ##  How to Run
 
@@ -90,7 +83,6 @@ pip install pandas numpy matplotlib seaborn
    ```bash
  nlp_sentimental_analysis.py
    ```
----
 
 ## Configuration
 
@@ -110,7 +102,6 @@ All hyperparameters are centralized in **Config**:
 | `TFIDF_MAX_FEATURES`| 50,000   | Max features for TF-IDF              |
 | `SEED`              | 42       | Random seed for reproducibility      |
 
----
 
 ## Pipeline Steps
 
@@ -142,7 +133,6 @@ All hyperparameters are centralized in **Config**:
    └── Accuracy, Weighted F1, Confusion Matrices, Training Curves
 ```
 
----
 
 ## Results
 
@@ -157,7 +147,6 @@ All hyperparameters are centralized in **Config**:
 
 > **RoBERTa** achieves the best performance with **83.66% accuracy** and **0.8377 weighted F1**, outperforming classical models by ~10%.
 
----
 
 ## Handling Constraints
 
@@ -168,7 +157,6 @@ All hyperparameters are centralized in **Config**:
 | Computational limits    | GPU-first with automatic CPU fallback on OOM          |
 | Generalization          | Stratified splits + warm-up scheduler + gradient clip |
 
----
 
 ## Output Files
 
@@ -185,7 +173,6 @@ After running the notebook, the following files are saved to `/kaggle/working/ou
 | `results_summary.json` | JSON summary of all model scores |
 | `classification_reports.txt` | Full per-class precision/recall/F1 reports |
 
----
 
 ## Notes
 
@@ -194,7 +181,6 @@ After running the notebook, the following files are saved to `/kaggle/working/ou
 - Total training time on Tesla T4 GPU: ~5.8 hours (all 6 models, 10 epochs each).
 - CPU fallback is automatically triggered if CUDA runs out of memory.
 
----
 
 ## Author
 
