@@ -81,7 +81,7 @@ pip install pandas numpy matplotlib seaborn
    ```
 5. Launch python code editor and run:
    ```bash
- nlp_sentimental_analysis.py
+   nlp_sentimental_analysis.py
    ```
 
 ## Configuration
