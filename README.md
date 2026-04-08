@@ -4,7 +4,7 @@
 
 ## Project Overview
 
-This project addresses the challenge of automatically classifying mental health-related text into 7 categories using both classical machine learning baselines and outperforming transformer models. It is designed as a comparative study to evaluate model performance, computational efficiency, and generalization on real-world noisy data.
+This project addresses the challenge of automatically classifying mental health-related text into 7 categories using both classical machine learning baselines and outperforming transformer models. It is designed as a comparative study to evaluate model performance, computational efficiency and generalization on real-world noisy data.
 
 **Dataset:** [Mental Health Data — Hugging Face, Kaggle](https://huggingface.co/datasets/btwitssayan/sentiment-analysis-for-mental-health)(https://www.kaggle.com/datasets/ushapoudellamgade/mental-health-data)  
 **Total Samples:** 52,680 | **Classes:** 7 | **Platform:** Kaggle (GPU: NVIDIA Tesla T4)
@@ -68,10 +68,10 @@ Or install all at once:
 
 ##  How to Run
 
-### Option 1: Run on Kaggle (Recommended)
+### Option 1: Run on Kaggle 
 1. Upload the notebook `nlp-sentimental-analysis.ipynb` to [Kaggle Notebooks](https://www.kaggle.com/code) or 'huggingface/btwitssayan/ sentiment-analysis-for-mental-health' to [Kaggle Notebooks](https://www.kaggle.com/code or any other python notebook/ editor)
 2. Add the dataset: **Mental Health Data** by `ushapoudellamgade` or **sentiment-analysis-for-mental-health** by btwitssayan
-3. Enable **GPU Accelerator** (T4 x2 recommended)
+3. Enable **GPU Accelerator** (T4 x2)
 4. Click **Run All**.
 
 ### Option 2: Run Locally
@@ -80,7 +80,7 @@ Or install all at once:
    git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
    cd YOUR_REPO_NAME
    ```
-2. Install dependencies (see above).
+2. Install dependencies.
 3. Download the dataset from Kaggle and place it at:
    ```
    data/data.csv
@@ -90,16 +90,15 @@ Or install all at once:
    DATA_PATH = "data/data.csv"
    OUTPUT_DIR = "outputs"
    ```
-5. Launch Jupyter and run the notebook:
+5. Launch python code editor and run:
    ```bash
-   jupyter notebook nlp-sentimental-analysis.ipynb
+ nlp-sentimental-analysis.py
    ```
-
 ---
 
 ## Configuration
 
-All hyperparameters are centralized in **Cell 2 (Config)**:
+All hyperparameters are centralized in **Config**:
 
 | Parameter           | Value    | Description                          |
 |---------------------|----------|--------------------------------------|
@@ -177,7 +176,7 @@ All hyperparameters are centralized in **Cell 2 (Config)**:
 
 ## Output Files
 
-After running the notebook, the following files are saved to `/kaggle/working/outputs/` (or your configured `OUTPUT_DIR`):
+After running the notebook, the following files are saved to `/kaggle/working/outputs/` (or `OUTPUT_DIR`):
 
 | File | Description |
 |------|-------------|
