@@ -1,7 +1,5 @@
 ### A Comparative Study of BERT, RoBERTa, and DistilBERT against Classical Machine Learning Models
 
-> **NLP Final Term Project** — AI-Powered Sentiment Analysis for Real-World Decision Making
-
 ---
 
 ## Project Overview
