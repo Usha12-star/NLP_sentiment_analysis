@@ -164,7 +164,7 @@ All hyperparameters are centralized in **Cell 2 (Config)**:
 
 ---
 
-## Handling Real-World Constraints
+## Handling Constraints
 
 | Constraint              | Strategy Applied                                      |
 |-------------------------|-------------------------------------------------------|
