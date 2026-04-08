@@ -14,7 +14,7 @@ This project addresses the challenge of automatically classifying mental health-
 ## Repository Structure
 
 ```
-├── nlp-sentimental-analysis.ipynb   # Main notebook 
+├── nlp-sentimental-analysis.ipynb   
 ├── README.md                       
 └── outputs/
     ├── class_distribution.png
